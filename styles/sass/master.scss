@@ -50,16 +50,34 @@
   content: none;
 }
 
-.progressbar li.active {
+.progressbar li.current {
   color: green;
 }
 
-.progressbar li.active:before {
+.progressbar li.current:before {
   border-color: green;
   color: white;
   background-color: green;
 }
 
-.progressbar li.active + li:after {
-  background-color: green;
+
+
+
+
+.progressbar li.finished {
+  color: pink;
+}
+
+.progressbar li.finished:before {
+  border-color: pink;
+  color: white;
+  background-color: pink;
+}
+
+.progressbar li.finished + li:after {
+  background-color: pink;
+}
+
+.btn-fix {
+  margin-top: 100px;
 }

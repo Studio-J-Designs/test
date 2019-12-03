@@ -14,14 +14,19 @@
   <div class="root">
      <div class="container">
           <ul class="progressbar">
-            <li class="active"> People </li>
-            <li class="active"> Days </li>
-            <li> Locations</li>
-            <li> Cars </li>
-            <li> Cost </li>
-            <li> Form </li>
+            <li onclick="step1()" id="step1" class="current"> People </li>
+            <li onclick="step2()" id="step2"> Days </li>
+            <li onclick="step3()" id="step3"> Locations</li>
+            <li onclick="step4()" id="step4"> Cars </li>
+            <li onclick="step5()" id="step5"> Cost </li>
+            <li onclick="step6()" id="step6"> Form </li>
           </ul>
       </div>
+  </div>
+
+  <button id="next" type="button" class="btn btn-primary btn-fix">Primary</button>
+  <div id="tester">
+
   </div>
 
 
