@@ -2,82 +2,196 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: black;
 }
 
-.container{
-  width: 100%;
+.test {
   position: absolute;
+  margin-left: 30%;
 }
 
-.progressbar {
-  counter-reset: step;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.progressbar li{
-  list-style: none;
-  float: left;
-  width: 16.6%;
-  position: relative;
-  text-align: center;
-}
-
-.progressbar li:before{
-  content: counter(step);
-  counter-increment: step;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #ddd;
-  display: block;
-  text-align: center;
-  margin: 0 auto 10px auto;
-  border-radius: 50%;
-  background-color: white;
-  font-weight: bold;
-}
-
-.progressbar li:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 5px;
-  background-color: #ddd;
-  top: 10px;
-  left: -50%;
-  z-index: -1;
-}
-
-.progressbar li:first-child:after {
-  content: none;
-}
-
-.progressbar li.current {
-  color: green;
-}
-
-.progressbar li.current:before {
-  border-color: green;
-  color: white;
-  background-color: green;
-}
-
-
-
-
-
-.progressbar li.finished {
+.box-minmax{
+  margin-top: 30px;  
+  // change this for size
+  width: 508px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
   color: pink;
+  span:first-child{
+    margin-left: 10px;
+  }
 }
 
-.progressbar li.finished:before {
-  border-color: pink;
-  color: white;
-  background-color: pink;
+.range-slider {
+    margin-top: 30vh;
+
 }
 
-.progressbar li.finished + li:after {
-  background-color: pink;
+.rs-range {
+    margin-top: 29px;
+    width: 500px;
+    -webkit-appearance: none;
+    &:focus {
+        outline: none;
+    }
+    &::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 1px;
+        cursor: pointer;
+        box-shadow: none;
+        background: pink;
+        border-radius: 0px;
+        border: 0px solid #010101;
+    }
+    &::-moz-range-track {
+        width: 100%;
+        height: 1px;
+        cursor: pointer;
+        box-shadow: none;
+        background: pink;
+        border-radius: 0px;
+        border: 0px solid #010101;
+    }
+
+    &::-webkit-slider-thumb {
+        box-shadow: none;
+        border: 0px solid pink;
+        box-shadow: 0px 10px 10px rgba(0,0,0,0.25);
+        height: 42px;
+        width: 22px;
+        border-radius: 22px;
+        background: rgba(255,255,255,1);
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -20px;
+    }
+  &::-moz-range-thumb{
+        box-shadow: none;
+        border: 0px solid pink;
+        box-shadow: 0px 10px 10px rgba(0,0,0,0.25);
+        height: 42px;
+        width: 22px;
+        border-radius: 22px;
+        background: rgba(255,255,255,1);
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -20px;
+  }
+  &::-moz-focus-outer {
+    border: 0;
+    }
+}
+.rs-label {
+
+    position: relative;
+    transform-origin: center center;
+    display: block;
+    width: 98px;
+    height: 98px;
+    background: transparent;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 26px;
+    box-sizing: border-box;
+    border: 2px solid pink;
+    margin-top: 20px;
+    margin-left: -38px;
+    left: attr(value);
+    color: pink;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 36px;
+
 }
 
-.btn-fix {
-  margin-top: 100px;
-}
+
+
+
+// .container{
+//   width: 100%;
+//   position: absolute;
+// }
+//
+// .progressbar {
+//   counter-reset: step;
+// }
+//
+// .progressbar li{
+//   list-style: none;
+//   float: left;
+//   width: 16.6%;
+//   position: relative;
+//   text-align: center;
+// }
+//
+// .progressbar li:before{
+//   content: counter(step);
+//   counter-increment: step;
+//   width: 30px;
+//   height: 30px;
+//   border: 1px solid #ddd;
+//   display: block;
+//   text-align: center;
+//   margin: 0 auto 10px auto;
+//   border-radius: 50%;
+//   background-color: white;
+//   font-weight: bold;
+// }
+//
+// .progressbar li:after {
+//   content: '';
+//   position: absolute;
+//   width: 100%;
+//   height: 5px;
+//   background-color: #ddd;
+//   top: 10px;
+//   left: -50%;
+//   z-index: -1;
+// }
+//
+// .progressbar li:first-child:after {
+//   content: none;
+// }
+//
+// .progressbar li.current {
+//   color: green;
+// }
+//
+// .progressbar li.current:before {
+//   border-color: green;
+//   color: white;
+//   background-color: green;
+// }
+//
+//
+//
+//
+//
+// .progressbar li.finished {
+//   color: pink;
+// }
+//
+// .progressbar li.finished:before {
+//   border-color: pink;
+//   color: white;
+//   background-color: pink;
+// }
+//
+// .progressbar li.finished + li:after {
+//   background-color: pink;
+// }
+//
+// .btn-fix {
+//   margin-top: 100px;
+// }
