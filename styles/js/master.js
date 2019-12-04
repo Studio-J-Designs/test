@@ -1,13 +1,83 @@
-var rangeSlider = document.getElementById("rs-range-line");
-var rangeBullet = document.getElementById("rs-bullet");
 
-rangeSlider.addEventListener("input", showSliderValue, false);
 
-function showSliderValue() {
-  rangeBullet.innerHTML = rangeSlider.value;
-  var bulletPosition = (rangeSlider.value /rangeSlider.max);
-  rangeBullet.style.left = (bulletPosition * 478) + "px";
-}
+
+
+
+
+
+
+
+
+
+
+// //date calculation with date pickers
+//
+// $("#startDate").datepicker({
+//   dateFormat: 'yy-mm-dd',
+//   changeMonth: true,
+//   minDate: new Date(),
+//   maxDate: '+1y',
+//   onSelect: function(date){
+//
+//       var selectedDate = new Date(date);
+//       var msecsInADay = 86400000;
+//       var stDate = new Date(selectedDate.getTime() + msecsInADay);
+//
+//      //Set Minimum Date of EndDatePicker After Selected Date of StartDatePicker
+//       $("#endDate").datepicker( "option", "minDate", stDate );
+//       var enDate = new Date(selectedDate.getTime() + 15 * msecsInADay);
+//
+//
+//       $("#endDate").datepicker( "option", "maxDate", enDate );
+//
+//   }
+// });
+//
+// $("#endDate").datepicker({
+//   dateFormat: 'yy-mm-dd',
+//   changeMonth: true,
+//   minDate: '+1d',
+// });
+//
+// //Find the number of days between dates
+// function dateDiff() {
+//
+//   var start = $('#startDate').datepicker('getDate');
+//   var end = $('#endDate').datepicker('getDate');
+//   var days   = (end - start)/1000/60/60/24;
+//
+//
+//   document.getElementById("noDays").value = days ;
+//   return;
+// }
+//
+//
+//
+// $('#submit1').click(function(){
+//   dateDiff();
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+// var rangeSlider = document.getElementById("rs-range-line");
+// var rangeBullet = document.getElementById("rs-bullet");
+//
+// rangeSlider.addEventListener("input", showSliderValue, false);
+//
+// function showSliderValue() {
+//   rangeBullet.innerHTML = rangeSlider.value;
+//   var bulletPosition = (rangeSlider.value /rangeSlider.max);
+//   rangeBullet.style.left = (bulletPosition * 478) + "px";
+// }
 
 
 
