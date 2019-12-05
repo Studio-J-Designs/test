@@ -3,8 +3,8 @@
 
 <head>
   <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
 
     <!-- BOOTSTRAP LINKS -->
 
@@ -37,7 +37,7 @@
 
 <body>
 
-
+<!--
       <h1>Google Maps - Direction Service and distance </h1>
 
       <div id="map"></div>
@@ -62,7 +62,7 @@
         <input type="submit" id="submit">
       </div>
       <div id="directions-panel"></div>
-      </div>
+      </div> -->
 
 
 
@@ -72,7 +72,7 @@
 
 
 
-  <!-- <label for="startDate" class="h3 white"> Starting Date </label>
+  <label for="startDate" class="h3 white"> Starting Date </label>
         <input type="text" id="startDate" name="startDate" class="mr-5" autocomplete="off">
 
         <label for="endDate" class="h3 white"> Ending Date </label>
@@ -86,15 +86,15 @@
         <input type="text" id="noDays" name="noDays">
 
 
- -->
 
 
 
 
 
-  <!-- <div class="test">
 
-  <div class="container">
+  <!-- <div class="moveSlider">
+
+  <div class="sliderContainer">
 
   <div class="range-slider">
     <span id="rs-bullet" class="rs-label">0</span>
@@ -132,28 +132,69 @@
 
 
 
+    <!-- JQYERY SCRIPTS -->
 
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous">
+</script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous">
+</script>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- CLOUDFLARE SCRIPTS -->
 
-    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous">
+</script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+   integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+   crossorigin="anonymous">
+</script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.js">
+    </script>
 
+    <!-- BOOTSTRAP SCRIPTS -->
 
-        <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZHFh_ukLm3nmhJ2G8Y82yQnSfxSFv_jM">
-        </script>
+<script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous">
+</script>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  crossorigin="anonymous">
+</script>
 
+    <!-- SWIPER SCRIPTS -->
+
+<script
+  src="https://unpkg.com/swiper/js/swiper.js">
+</script>
+<script
+  src="https://unpkg.com/swiper/js/swiper.min.js">
+</script>
+
+    <!-- GOOGLE MAPS SCRIPTS -->
+
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZHFh_ukLm3nmhJ2G8Y82yQnSfxSFv_jM">
+</script>
+
+    <!-- PERSONAL SCRIPTS -->
 
 
     <script src="styles/js/master.js"></script>
+
 
 </body>
 </html>
